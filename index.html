@@ -43,20 +43,18 @@
     <div id="game"></div>
 
     <script>
-        // Monta automaticamente a URL correta da ROM hospedada no seu repositório
-        const basePath = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-        
         EJS_player = '#game';
-        EJS_core = 'snes'; // Core de Super Nintendo
-        EJS_gameUrl = basePath + 'Top_Gear_2.sfc'; // Garanta que seu arquivo se chama exatamente Top_Gear_2.sfc
+        EJS_core = 'snes'; 
         
-        // Caminho da CDN oficial estável do EmulatorJS (Corrige o bloqueio de carregamento)
+        // CORREÇÃO DEFINITIVA: Cole a URL direta da sua ROM abaixo
+        // Exemplo: 'https://github.io'
+        EJS_gameUrl = 'SUA_URL_DIRETA_AQUI'; 
+        
         EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
         EJS_startOnLoaded = true;
     </script>
     
-    <!-- Loader vindo da infraestrutura oficial dedicada -->
-    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+    <script src="https://emulatorjs.org"></script>
 
 </body>
 </html>
